@@ -1,0 +1,416 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+  }
+  
+  a {
+    color: #428bca;
+    text-decoration: none;
+    
+  }
+  li{
+    list-style: none;
+  }
+
+  a:hover {
+    color: #9eccf4;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-primary {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #428bca;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #629fd3;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f5f9fc;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .section-title img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5c768d;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------*/
+  .breadcrumbs {
+    padding: 15px 0;
+    background-color: #f5f9fc;
+    min-height: 40px;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+  
+    .breadcrumbs ol {
+      display: block;
+    }
+  
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # About Lists
+  --------------------------------------------------------------*/
+  .about-lists {
+    padding: 40px;
+  }
+  
+  .about-lists .row {
+    overflow: hidden;
+  }
+  
+  .about-lists .content-item {
+    padding: 40px;
+    border-left: 1px solid #d9e8f4;
+    border-bottom: 1px solid #d9e8f4;
+    margin: -1px;
+  }
+  
+  .about-lists .content-item span {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    color: #9eccf4;
+  }
+  
+  .about-lists .content-item h4 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .about-lists .content-item p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .about-lists .content-item {
+      padding: 40px 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Counts
+  --------------------------------------------------------------*/
+  .counts {
+    padding-bottom: 30px;
+  }
+  
+  .counts .count-box {
+    box-shadow: 0px 0 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .counts .count-box i {
+    display: block;
+    font-size: 64px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .counts .count-box span {
+    font-size: 42px;
+    display: block;
+    font-weight: 700;
+    color: #1c5c93;
+  }
+  
+  .counts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+  .services {
+    padding-bottom: 30px;
+  }
+  
+  .services .icon-box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .services .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: #428bca;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  
+  .services .icon i {
+    font-size: 36px;
+    line-height: 0;
+  }
+  
+  .services .icon-box:hover .icon {
+    box-shadow: 0px 0 30px rgba(66, 139, 202, 0.5);
+  }
+  
+  .services .title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .services .title a {
+    color: #444;
+    transition: 0.3s;
+  }
+  
+  .services .title a:hover {
+    color: #428bca;
+  }
+  
+  .services .title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #428bca;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .services .description {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Our Team
+  --------------------------------------------------------------*/
+  .team {
+    background: #fff;
+    padding: 60px 0 30px 0;
+  }
+  
+  .team .member {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  
+  .team .member .pic {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .team .member img {
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .team .member:hover img {
+    transform: scale(1.1);
+  }
+  
+  .team .member .member-info {
+    position: absolute;
+    bottom: -48px;
+    left: 20px;
+    right: 20px;
+    background: linear-gradient(360deg, rgb(92, 118, 141) 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+    padding: 15px 0;
+    border-radius: 4px;
+  }
+  
+  .team .member h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .team .member h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  .team .member .social {
+    margin-top: 15px;
+  }
+  
+  .team .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+  }
+  
+  .team .member .social a:hover {
+    color: #9eccf4;
+  }
+  
+  .team .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  
+  @media (max-width: 992px) {
+    .team .member {
+      margin-bottom: 100px;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Frequently Asked Questions
+  --------------------------------------------------------------*/
+  .faq {
+    padding-bottom: 30px;
+  }
+  
+  .faq .faq-item {
+    margin-bottom: 40px;
+  }
+  
+  .faq .faq-item h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1f3548;
+  }
+  
+
+  
+  
+  

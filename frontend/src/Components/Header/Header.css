@@ -1,0 +1,43 @@
+#topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    height: 40px;
+    padding: 0;
+    background: white;
+  }
+  
+  #topbar .contact-info a {
+    line-height: 0;
+    color: #444;
+    transition: 0.3s;
+  }
+  
+  #topbar .contact-info a:hover {
+    color: #428bca;
+  }
+  
+  #topbar .contact-info i {
+    color: #428bca;
+    line-height: 0;
+    margin-right: 5px;
+  }
+  
+  #topbar .contact-info .phone-icon {
+    margin-left: 15px;
+  }
+  
+  #topbar .social-links a {
+    color: #5c768d;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+  }
+  
+  #topbar .social-links a:hover {
+    color: #428bca;
+  }
+ 
